@@ -1,9 +1,19 @@
 
 @media screen {
+	:root{
+		--color-fondo: white;
+		--color-titulo: #1a563d;
+		--color-sombreado-titulo: #0b2c1e;
+		--color-enlace: rgb(229, 245, 139);
+		--color-enlace-hover: rgb(245, 241, 38);
+
+	}
+
 	html,
 	body {
 		margin:0;
 		padding:0;
+		background-color: var(--color-fondo);
 	}
 	
 	#todo {
@@ -91,11 +101,11 @@
 	header .titulo a:hover, 
 	header .titulo a:visited{
 		text-decoration:none;	
-		color:#f9e4b3;
+		color:var(--color-titulo);
 	}
 
 	header .titulo a h1 {
-		text-shadow: 0px 0px 7px #4a2f02;
+		text-shadow: 0px 0px 7px var(--color-sombreado-titulo);
 	}
 	
 	footer {
@@ -108,7 +118,7 @@
 	}
 	
 	footer h2 {
-		color:#56391a;
+		color: var(--color-titulo);
 	}
 	
 	footer h2 span {

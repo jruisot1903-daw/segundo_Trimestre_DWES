@@ -21,4 +21,11 @@ class inicialControlador extends CControlador
 	}
 
 	
+	public function accionNuevo(){
+		echo "<p>Nueva Pagina </p>";
+	}
+
+	
+
 }
+
