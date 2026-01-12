@@ -17,7 +17,6 @@ class usuariosControlador extends CControlador
 		
 		$this->dibujaVista("index",[],
 							"Principal Usuarios");
-
 		
 	}
 

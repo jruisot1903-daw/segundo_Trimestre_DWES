@@ -1,6 +1,6 @@
 <?php
 	 
-class inicialControlador extends CControlador
+class ejer1Controlador extends CControlador
 {
 	public array $menuizq=[];
 	public function accionIndex()
@@ -12,14 +12,7 @@ class inicialControlador extends CControlador
 				"texto" => "Inicio", 
 				"enlace" => ["inicial"]
 			],
-			[
-				"texto" => "usuario",
-				"enlace" =>["usuarios","index"]
-			],
-			[
-				"texto" => "ejercicio 1",
-				"enlace" =>["ejer1","index"]
-			]
+			
 		];
 
 		
