@@ -30,7 +30,40 @@
 
 		</header><!-- #header -->
 
+		<div class="barras">
+			<div class="barra-menu">
+				<div class="enlaces">
+					<?php
+					echo CHTML::link("Practica1", ["pract1", "MiIndice"]);
+					?>
+				</div>
+
+				<div class="enlaces">
+					<?php
+					echo CHTML::link("Practica2", ["pract2", "index"]);
+					?>
+				</div>
+				
+			</div>
+
+			<div class="barraUbi">
+				<?php
+				if (isset($this->barraUbi)) {
+					foreach ($this->barraUbi as $opcion) {
+						echo CHTML::link(
+							$opcion["texto"],
+							$opcion["enlace"]
+						);
+						echo " &gt; ";
+					}
+				}
+				?>		
+			</div>
+		</div>
+
+
 		<div class="contenido">
+			
 			<aside>
 				<ul>
 					<?php

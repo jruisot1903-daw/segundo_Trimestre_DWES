@@ -1,6 +1,6 @@
 <?php
 	 
-class inicialControlador extends CControlador
+class pract2Controlador extends CControlador
 {
 	public array $menuizq=[];
 	public array $barraUbi=[];
@@ -10,6 +10,10 @@ class inicialControlador extends CControlador
 			[
 				"texto" => "Inicio", 
 				"enlace" => ["inicial"]
+			],
+			[
+				"texto" => "Practica2", 
+				"enlace" => ["pract2", "index"]
 			]
 		];
 
@@ -17,18 +21,14 @@ class inicialControlador extends CControlador
 			[
 				"texto" => "Inicio", 
 				"enlace" => ["inicial"]
-			]
+			],
+			
 		];
 
 		
 
 		$this->dibujaVista("index",[],
 							"Pagina principal");
-	}
-
-	
-	public function accionNuevo(){
-		echo "<p>Nueva Pagina </p>";
 	}
 
 	
