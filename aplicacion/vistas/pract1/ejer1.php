@@ -1,4 +1,21 @@
 <?php
+
+$this->barraUbi = [
+			[
+				"texto" => "Inicio", 
+				"enlace" => ["inicial"]
+			],
+			[
+				"texto" => "Practica1", 
+				"enlace" => ["pract1", "MiIndice"]
+			],
+			[
+				"texto" => "Ejercicio 1", 
+				"enlace" => ["pract1", "ejer1"]
+			]
+		];
+
+
 echo CHTML::dibujaEtiqueta("p",[],"Round: ".$round);
 echo CHTML::dibujaEtiqueta("p",[],"Floor: ".$floor);
 echo CHTML::dibujaEtiqueta("p",[],"Pow: ".$pow);
