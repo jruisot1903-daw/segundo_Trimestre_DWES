@@ -9,10 +9,6 @@ $this->barraUbi = [
 				"texto" => "Practica1", 
 				"enlace" => ["pract1", "MiIndice"]
 			],
-			[
-				"texto" => "Ejercicio 1", 
-				"enlace" => ["pract1", "ejer1"]
-            ],
             [
                 "texto" => "Ejercicio 2",
                 "enlace" => ["pract1", "ejer2"]

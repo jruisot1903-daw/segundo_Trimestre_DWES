@@ -29,6 +29,10 @@ class pract1Controlador extends CControlador
 			[
 				"texto"=>"Ejercicio 7",
 				"enlace"=>["pract1","Ejer7"]
+			],
+			[
+				"texto"=>"Ejercicio 5",
+				"enlace"=>["pract1","Ejer5"]
 			]
 		];
 	}
@@ -214,6 +218,18 @@ class pract1Controlador extends CControlador
 			"fechaMenos3"=>$fechaMenos3Form
 		],
 		"Ejercicio 7");
+	}
+
+	// ---------- Ejer 5 -----------------
+	public function accionEjer5(){
+		$vector = array();
+		$vector[1] = "esto es una cadena";
+		$vector["posi1"] = 25.67;
+		$vector[] = false;
+		$vector["ultima"] = array(2,5,96);
+		$vector[56] = 23;
+
+		$this->dibujaVista("vistaejer5",["vector"=>$vector],"Ejercicio 5");
 	}
 
 }
