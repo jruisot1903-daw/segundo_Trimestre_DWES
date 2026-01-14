@@ -27,7 +27,11 @@ class pract2Controlador extends CControlador
 				"enlace"=> Sistema::app()->generaURL("descarga2",[])
 			],
 			[
-				"texto"=> "PedirDatos",
+				"texto"=> "Pedir Datos",
+				"enlace"=> Sistema::app()->generaURL("pedirDatos",[])
+			],
+			[
+				"texto"=> "AJAX",
 				"enlace"=> ["pract2","ajax"]
 			]
 		];

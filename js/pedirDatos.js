@@ -1,17 +1,31 @@
-var dominio = document.location.protocol + "//" + document.location.hostname;
-var url = dominio + "pract2/ajax";
+var boton = document.getElementById("btPedi");
 
-var resutl = document.getElementById("id_resutl");
+boton.addEventListener("click", function (e) {
+    e.preventDefault();
 
-document.getElementById("id_form").addEventListener("click",function(event){
-    event.preventDefault();
-})
+    var min = document.getElementById("min").value;
+    var max = document.getElementById("max").value;
+    var patron = document.getElementById("cadena").value;
 
+    var url = "/pract2/pedirDatos"
+            + "?min=" + encodeURIComponent(min)
+            + "&max=" + encodeURIComponent(max)
+            + "&patron=" + encodeURIComponent(patron);
 
+    var xhr = new XMLHttpRequest();
+    xhr.open("POST", url, true);
 
-document.getElementById("btEnvi").addEventListener("click",function(){
-    
-    fetch(url,{
-        method: "POST",
-    })
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4) {
+            if (xhr.status === 200) {
+                    var data = JSON.parse(xhr.responseText);
+
+                   var cadena = "{" + data.numeros.join(", ") + "}\n";
+                    cadena += "{" + data.palabras.join(", ") + "}"; 
+                    document.getElementById("result").innerText = cadena;
+            }
+        }
+    };
+
+    xhr.send();
 });

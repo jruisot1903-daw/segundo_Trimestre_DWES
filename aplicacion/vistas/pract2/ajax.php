@@ -13,6 +13,7 @@ $this->barraUbi = [
 				"enlace" => ["pract2", "ajax"]
 			]
 		];
+		
 	//EJEMPLO DE CLASE
 		$this->textoHead=CHTML::scriptFichero("/js/pedirDatos.js",["defer" => "defer"]); 
 		// de esta forma hacemos que se cargue el js en el html
@@ -40,7 +41,7 @@ $this->barraUbi = [
 		echo "<br>";
 		echo "<br>";
 
-		echo CHTML::dibujaEtiqueta("div",["id" => "result"],"");
+		echo CHTML::dibujaEtiqueta("textarea",["id" => "result","cols"=>50,"rows"=>10],"");
 
 	
 
