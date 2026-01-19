@@ -66,14 +66,13 @@ class pract2Controlador extends CControlador
 	// ---------- Ejer Descarga -----------------
 
 	public function acciondescarga1(){
-		$this->dibujaVista("descarga1",[],"Descarga");
+		$this->dibujaVistaParcial("descarga1",[],false);
 	}
 
 	public function acciondescarga2(){
 		header("Content-Disposition: attachment; filename=descarga.txt");
         header("Content-Type: text/plain");
         echo "Fichero descargado2.\n";  
-		exit;
 	}
 
 	// ---------- Ejer PedirDatos -----------------

@@ -17,6 +17,10 @@ class inicialControlador extends CControlador
 			[
 				"texto" => "Inicio", 
 				"enlace" => ["inicial"]
+			],
+			[
+				"texto" => "EjemploModelos",
+				"enlace" => ["ejemModelos","index"]
 			]
 		];
 
